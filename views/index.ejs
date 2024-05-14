@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista treningów</title>
+</head>
+<body>
+    <h1>Lista treningów</h1>
+    <ul>
+        <% trainings.forEach((training, index) => { %>
+            <li>
+                <%= training.name %> - <%= training.type %> - <%= training.intensity %>
+                <form action="/delete/<%= index %>" method="POST"> 
+                    <input type="hidden" name="_method" value="DELETE"> 
+                    <button type="submit">Usuń</button> 
+                </form>
+                <a href="/edit/<%= index %>">Edytuj</a>
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/add">Dodaj nowy trening</a>
+
+    <script>
+        function submitDeleteForm(index) {
+            const form = document.getElementById('deleteForm' + index);
+            form.submit();
+        }
+    </script>
+</body>
+</html>

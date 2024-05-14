@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj nowy trening</title>
+</head>
+<body>
+    <h1>Dodaj nowy trening</h1>
+    <form action="/add" method="POST">
+        <label for="name">Nazwa:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="type">Rodzaj:</label><br>
+        <input type="text" id="type" name="type" required><br>
+        <label for="intensity">Intensywność:</label><br>
+        <input type="text" id="intensity" name="intensity" required><br><br>
+        <button type="submit">Dodaj</button>
+    </form>
+</body>
+</html>
