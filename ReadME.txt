@@ -8,13 +8,14 @@ Instrukcje obsługi
 
 
 Opis projektu:
-Projekt "System organizacji treningów fitness" umożliwia użytkownikom przeglądanie, dodawanie i edytowanie swoich treningow fitness. 
-Użytkownicy mogą dodawać nowe treningi oraz edytować istniejące. Aplikacja została zbudowana z wykorzystaniem technologii Node.j oraz Express.js.
+Projekt "System organizacji treningów fitness" umożliwia użytkownikom przeglądanie, dodawanie, edytowanie i usunięcie swoich treningow fitness. 
+Użytkownicy mogą dodawać nowe treningi oraz edytować i usuwać istniejące. Aplikacja została zbudowana z wykorzystaniem technologii Node.j oraz Express.js.
 
 
 Funkcjonalności:
 Dodawanie treningów: Możliwość dodawania nowych treningów poprzez formularz.
 Edycja treningów: Użytkownicy mogą edytować istniejące treningi, zmieniając ich nazwę, rodzaj i intensywność.
+Usuwanie treningów: Użytkownicy mają możliwość usuwania istniejących treningów, aby zarządzać swoją listą treningów.
 
 
 Instrukcje obsługi:
@@ -35,3 +36,7 @@ Edycja treningu:
 Na liście treningów znajdź trening, który chcesz edytować.
 Kliknij na przycisk "Edytuj" obok treningu.
 W formularzu edycji dokonaj żądanych zmian i kliknij przycisk "Zapisz zmiany".
+
+Usuwanie treningów:
+Aby usunąć istniejący trening, przejdź do listy treningów na stronie głównej.
+Obok każdego treningu znajduje się przycisk "Usuń". Kliknij ten przycisk obok treningu, który chcesz usunąć.

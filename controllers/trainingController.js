@@ -39,3 +39,6 @@ exports.deleteTraining = (req, res) => {
     trainings.splice(trainingId, 1)
     res.redirect('/');
 };
+exports.getTrainingReports = (req, res) => {
+    res.render('reports', { trainings: trainings });
+};
