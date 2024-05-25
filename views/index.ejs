@@ -12,21 +12,14 @@
         <% trainings.forEach((training, index) => { %>
             <li>
                 <%= training.name %> - <%= training.type %> - <%= training.intensity %>
-                <form action="/delete/<%= index %>" method="POST"> 
-                    <input type="hidden" name="_method" value="DELETE"> 
-                    <button type="submit">Usuń</button> 
+                <form action="/delete/<%= index %>" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit">Usuń</button>
                 </form>
                 <a href="/edit/<%= index %>">Edytuj</a>
             </li>
         <% }); %>
     </ul>
     <button class="add-button" onclick="location.href='/add'">Dodaj nowy trening</button>
-
-    <script>
-        function submitDeleteForm(index) {
-            const form = document.getElementById('deleteForm' + index);
-            form.submit();
-        }
-    </script>
 </body>
 </html>

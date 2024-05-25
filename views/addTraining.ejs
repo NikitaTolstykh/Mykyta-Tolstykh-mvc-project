@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +12,19 @@
         <label for="name">Nazwa:</label><br>
         <input type="text" id="name" name="name" required><br>
         <label for="type">Rodzaj:</label><br>
-        <input type="text" id="type" name="type" required><br>
+        <select id="type" name="type" required>
+            <option value="kardio">Kardio</option>
+            <option value="siła">Siła</option>
+            <option value="elastyczność">Elastyczność</option>
+            <option value="równowaga">Równowaga</option>
+        </select><br>
         <label for="intensity">Intensywność:</label><br>
-        <input type="text" id="intensity" name="intensity" required><br><br>
-        <button type="submit">Dodaj</button>
+        <select id="intensity" name="intensity" required>
+            <option value="niska">Niska</option>
+            <option value="średnia">Średnia</option>
+            <option value="wysoka">Wysoka</option>
+        </select><br><br>
+        <button type="submit" class="dodaj">Dodaj</button>
     </form>
 </body>
 </html>

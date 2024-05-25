@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +12,19 @@
         <label for="name">Nazwa:</label><br>
         <input type="text" id="name" name="name" value="<%= training.name %>" required><br>
         <label for="type">Rodzaj:</label><br>
-        <input type="text" id="type" name="type" value="<%= training.type %>" required><br>
+        <select id="type" name="type" required>
+            <option value="kardio" <%= training.type === 'kardio' ? 'selected' : '' %>>Kardio</option>
+            <option value="siła" <%= training.type === 'siła' ? 'selected' : '' %>>Siła</option>
+            <option value="elastyczność" <%= training.type === 'elastyczność' ? 'selected' : '' %>>Elastyczność</option>
+            <option value="równowaga" <%= training.type === 'równowaga' ? 'selected' : '' %>>Równowaga</option>
+        </select><br>
         <label for="intensity">Intensywność:</label><br>
-        <input type="text" id="intensity" name="intensity" value="<%= training.intensity %>" required><br><br>
-        <button type="submit">Zapisz zmiany</button>
+        <select id="intensity" name="intensity" required>
+            <option value="niska" <%= training.intensity === 'niska' ? 'selected' : '' %>>Niska</option>
+            <option value="średnia" <%= training.intensity === 'średnia' ? 'selected' : '' %>>Średnia</option>
+            <option value="wysoka" <%= training.intensity === 'wysoka' ? 'selected' : '' %>>Wysoka</option>
+        </select><br><br>
+        <button type="submit" class="dodaj">Zapisz zmiany</button>
     </form>
 </body>
 </html>
-
